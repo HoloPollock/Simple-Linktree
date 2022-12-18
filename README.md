@@ -22,3 +22,9 @@ Then if you just want a divider between your links use
 ```tsx
 <Divider>TEXT TO SHOW</DIVIDER>
 ```
+
+### Deploy
+you can deploy this site however you want i recommend
+
+- [Vercel](https://vercel.com/)
+- [Netlify](https://www.netlify.com/)
