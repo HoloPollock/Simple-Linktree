@@ -3,13 +3,22 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "build-avif": "avif --input=\"**/*.jpg\" --verbose",
+    "build-webp": "webpc -r",
+    "pictures": "npm run build-avif && npm run build-webp",
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "npm run pictures && astro build",
     "preview": "astro preview"
   },
   "devDependencies": {
     "astro": "^1.6.3",
-    "autoprefixer": "^10.4"
+    "autoprefixer": "^10.4",
+    "avif": "^0.4.0",
+    "sharp": "^0.31.3",
+    "webp-converter-cli": "^0.0.5"
+  },
+  "dependencies": {
+    
   }
 }
